@@ -1,7 +1,7 @@
 import { React, useState, useEffect } from "react";
 import EmptyList from "../components/EmptyList";
 import Chip from "../components/Chip";
-import "../index.css";
+import "../styles/index.css";
 import { Link } from "react-router-dom";
 
 const Post = () => {
