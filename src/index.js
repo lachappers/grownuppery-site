@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 
 // add Foundation CSS
-import "foundation-sites/dist/css/foundation.min.css";
+// import "foundation-sites/dist/css/foundation.min.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

@@ -5,7 +5,7 @@ import Main from "../components/Main";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="home-page">
       <Header />
       <br />
       <Main />

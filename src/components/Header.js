@@ -43,6 +43,18 @@ const Header = ({ data }) => {
             <li>
               <a href="#"></a>Category 1
             </li>
+            <li>
+              <a href="#"></a>Category 1
+            </li>
+            <li>
+              <a href="#"></a>Category 1
+            </li>
+            <li>
+              <a href="#"></a>Category 1
+            </li>
+            <li>
+              <a href="#"></a>Category 1
+            </li>
           </ul>
         </nav>
         <SearchBar
@@ -52,15 +64,23 @@ const Header = ({ data }) => {
           handleSearchKey={(e) => setSearchKey(e.target.value)}
         />
         {/* Add Blog List or Empty View to dropdown*/}
-        {!PostList.length ? (
+        {/* {!PostList.length ? (
           <EmptyList />
         ) : (
           <PostList posts={posts} content={PostContent} />
-        )}
+        )} */}
       </section>
-      <section className="row">
-        <div className="medium-4 columns">
+      <section className="header-row">
+        <div className="header-logo medium-4 columns">
           <img src={grownupperyLogo} alt="grownuppery logo" />
+        </div>
+
+        <div className="header-box">
+          <img
+            src="https://placehold.it/900x175&amp;text=Responsive Ads - ZURB Playground/333"
+            alt="advertisement for deep fried Twinkies"
+            sizes="100px"
+          />
         </div>
       </section>
       <section className="responsive-hidden-nav-container">
