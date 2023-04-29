@@ -22,6 +22,17 @@ hr {
 }
 a {
   background-color: transparent;
+  line-height: inherit;
+  color: #1779ba;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover,
+a:focus {
+  color: #1468a0;
+}
+a img {
+  border: 0;
 }
 img {
   display: inline-block;
@@ -37,6 +48,38 @@ label {
   font-weight: normal;
   line-height: 1.8;
   color: #0a0a0a;
+}
+
+.label {
+  display: inline-block;
+  padding: 0.33333rem 0.5rem;
+  border-radius: 0;
+  font-size: 0.8rem;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: default;
+  background: #1779ba;
+  color: #fefefe;
+}
+.label.primary {
+  background: #1779ba;
+  color: #fefefe;
+}
+.label.secondary {
+  background: #767676;
+  color: #fefefe;
+}
+.label.success {
+  background: #3adb76;
+  color: #0a0a0a;
+}
+.label.warning {
+  background: #ffae00;
+  color: #0a0a0a;
+}
+.label.alert {
+  background: #cc4b37;
+  color: #fefefe;
 }
 
 code {
@@ -335,27 +378,33 @@ textarea:focus {
 
 /* Main featured article */
 .featured-articles {
-  width: 80%;
+  margin: 2rem;
 
   display: flex;
   flex-wrap: wrap;
-
-  gap: 1rem;
 }
 
 .featured-article-big-container {
-  flex: 1 3 auto;
-  min-width: 70%;
+  flex: 3 1 25rem;
+}
+
+.featured-article-big-container a {
+  height: 100%;
+  display: flex;
 }
 
 .featured-article-big {
-  background: url("https://placehold.it/600?text=Big+Feature") no-repeat center
-    center;
-  background-size: cover;
-  height: 100%;
+  margin: 0.5rem;
+  /* fix height when correct media included */
+  background: url("https://placehold.it/600?text=Big+Feature");
+  background-position: center;
+  background-size: auto;
+
+  padding: 0.5rem;
 
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -363,6 +412,7 @@ textarea:focus {
   font-size: 1.75rem;
   font-weight: bold;
   line-height: 1.875rem;
+  color: #fefefe;
 }
 
 .featured-article-big .featured-article-text .featured-article-title .author {
@@ -371,13 +421,12 @@ textarea:focus {
 
 .featured-article-big .featured-article-text p {
   color: #fefefe;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
 
 .featured-articles-side {
-  flex: 1 0 auto;
-  /* grid-column: auto/ -1;
-  grid-row: auto / -1; */
+  margin: 0.5rem;
+  flex: auto;
 
   display: flex;
   flex-direction: column;
@@ -386,16 +435,14 @@ textarea:focus {
 }
 
 .featured-article-small-container {
-  flex: auto;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
+  flex: 1 1 auto;
 }
 
 .featured-article-small {
   background: url("https://placehold.it/200?text=Small+Feature");
   background-position: center;
   background-size: cover;
+  padding: 0.5rem;
 
   display: flex;
   flex-direction: column;
@@ -409,6 +456,7 @@ textarea:focus {
   max-height: 2.8125rem;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: #fefefe;
 }
 
 .featured-article-small .featured-article-text p {

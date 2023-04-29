@@ -14,12 +14,17 @@ const Main = () => (
             <h3 className="featured-article-title">
               Title Here <span className="author">by Joe Bloggs</span>
             </h3>
-            <p>Latin text</p>
-            <a href="#"> Read More</a>
+            <p>
+              Latin text Latin text Latin text Latin text Latin text Latin text
+              Latin text Latin text Latin text Latin text Latin text Latin text
+              Latin text Latin text
+            </p>
+            <a href="#"> Read More > </a>
           </div>
         </article>
       </a>
     </div>
+    <hr />
     <div className="featured-articles-side">
       {/* Small feature */}
       <div className="featured-article-small-container">
