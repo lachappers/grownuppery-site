@@ -9,6 +9,7 @@ const HomePage = () => {
       <Header />
       <br />
       <Main />
+      <hr />
     </div>
   );
 };

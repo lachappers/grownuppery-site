@@ -24,7 +24,6 @@ const Main = () => (
         </article>
       </a>
     </div>
-    <hr />
     <div className="featured-articles-side">
       {/* Small feature */}
       <div className="featured-article-small-container">
@@ -42,6 +41,7 @@ const Main = () => (
           </article>
         </a>
       </div>
+
       <div className="featured-article-small-container">
         <a href="#">
           <article className="featured-article-small">
@@ -57,6 +57,7 @@ const Main = () => (
           </article>
         </a>
       </div>
+
       <div className="featured-article-small-container">
         <a href="#">
           <article className="featured-article-small">
@@ -73,6 +74,20 @@ const Main = () => (
         </a>
       </div>
     </div>
+    <hr
+      style={{
+        background: "#6F38C5",
+        height: "5px",
+        border: "none",
+      }}
+    />
+    <hr
+      style={{
+        background: "#6F38C5",
+        height: "5px",
+        border: "solid",
+      }}
+    />
   </section>
 );
 

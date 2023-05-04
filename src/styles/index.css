@@ -17,8 +17,15 @@ body {
 
 hr {
   box-sizing: content-box;
-  height: 0;
-  overflow: visible;
+  max-width: 75rem;
+  height: 5px;
+  margin: 1.25rem auto;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  /* border-bottom: 1px solid #cacaca; */
+  border-bottom: 5px solid aqua;
+  background-color: pink;
 }
 a {
   background-color: transparent;

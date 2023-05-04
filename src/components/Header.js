@@ -79,7 +79,7 @@ const Header = ({ data }) => {
           <img
             src="https://placehold.it/900x175&amp;text=Responsive Ads - ZURB Playground/333"
             alt="advertisement for deep fried Twinkies"
-            sizes="100px"
+
           />
         </div>
       </section>
